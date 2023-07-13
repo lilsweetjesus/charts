@@ -1,0 +1,15 @@
+prometheus-postgres-exporter:
+  config:
+    # possible values debug, info, warn, error, fatal
+    logLevel: "info"
+    # possible values logfmt, json
+    logFormat: "json"
+    datasource:
+      sslmode: require
+      host: "REPLACE_ME"
+      port: "REPLACE_ME"
+      user: "REPLACE_ME"
+      password: "REPLACE_ME"
+      database: "REPLACE_ME"
+  serviceMonitor:
+    enabled: true
